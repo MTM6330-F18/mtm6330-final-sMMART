@@ -6319,8 +6319,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 20rem;
-  margin-bottom: 0; }
+  height: 15rem;
+  margin-bottom: 2%; }
 
 .carousel-item > img {
   position: absolute;
@@ -6351,10 +6351,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 2rem; }
 
 .left {
-  background-color: #033F67; }
+  background-color: #033f67; }
 
 .middle {
-  background-color: #D8881F; }
+  background-color: #d8881f; }
 
 .right {
   background-color: #284322; }
@@ -6364,17 +6364,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .title {
   color: white;
-  margin-top: 8px; }
+  margin-top: 12px;
+  font-size: 1.3rem; }
 
 .description {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-top: 3%; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .featurette-heading {
-    font-size: 50px; } }
+  /* Bump up size of carousel content */ }
 
 @media (min-width: 62em) {
   .featurette-heading {

@@ -23,11 +23,11 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 20rem;
-  margin-bottom: 0;
+  height: 15rem;
+  margin-bottom: 2%;
 }
 
-.carousel-item>img {
+.carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,11 +61,11 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 }
 
 .left {
-  background-color: #033F67;
+  background-color: #033f67;
 }
 
 .middle {
-  background-color: #D8881F;
+  background-color: #d8881f;
 }
 
 .right {
@@ -78,25 +78,20 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 
 .title {
   color: white;
-  margin-top: 8px;
+  margin-top: 12px;
+  font-size: 1.3rem;
 }
 
 .description {
   font-size: 1.3rem;
+  margin-top: 3%;
 }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-
 @media (min-width: 40em) {
-
   /* Bump up size of carousel content */
-
-
-  .featurette-heading {
-    font-size: 50px;
-  }
 }
 
 @media (min-width: 62em) {
