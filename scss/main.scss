@@ -3,7 +3,7 @@
 // potential variables to customize.
 // For example ...
 $primary: #006341; // set the primary color to AC Green
-$jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
+$jumbotron-bg: white; // set the Jumbotron background to AC Green @10% tint
 $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 
 // Load the main bootstrap framework.
@@ -11,59 +11,88 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 
 // Custom styles that are common for all pages in our project
 
-
 // Load our custom partials with styles specific to a particular page.
 // e.g. @import 'schedule';
 // will import the '_schedule.scss' file with style specific to the schedule page.
 
-
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
-  margin-top: 15rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #777;
+  height: 20rem;
+  margin-bottom: 0;
 }
 
 .carousel-item>img {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 32rem;
+  width: 100%;
+  height: auto;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-top: 20rem;
-  margin-bottom: 25rem;
+  margin-bottom: 4rem;
   text-align: center;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left,
+.middle,
+.right {
+  width: 200px;
+  height: 220px;
+  z-index: 999;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.left {
+  background-color: #033F67;
+}
+
+.middle {
+  background-color: #D8881F;
+}
+
+.right {
+  background-color: #284322;
 }
 
 .marketing h2 {
   font-weight: 400;
 }
 
+.title {
+  color: white;
+  margin-top: 8px;
+}
+
+.description {
+  font-size: 1.3rem;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
+
 @media (min-width: 40em) {
 
   /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
+
 
   .featurette-heading {
     font-size: 50px;
