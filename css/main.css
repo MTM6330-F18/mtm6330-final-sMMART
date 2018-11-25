@@ -6364,12 +6364,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .title {
   color: white;
-  margin-top: 12px;
+  margin-top: 7%;
   font-size: 1.3rem; }
+
+.pageTitle {
+  margin-top: 3%; }
 
 .description {
   font-size: 1.3rem;
-  margin-top: 3%; }
+  margin-top: 2%; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
