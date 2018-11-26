@@ -1,129 +1,268 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/min/main.css" />
+    <title>MTM6330-F18 Final Project</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/min/main.css" />
-  <title>MTM6330-F18 Final Project</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="jumbotron my-5">
-      <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-            </form>
-          </div>
-        </nav>
-      </header>
-
-      <main role="main">
-        <!-- carousel -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-          <div class="carousel-inner">
-            <!-- first slide -->
-            <div class="carousel-item active">
-              <img class="first-slide" src="https://image.ibb.co/nu1uuq/Untitled-1.png" />
+  <body>
+    <div class="container">
+      <div class="jumbotron my-5">
+        <main role="main">
+          <!-- carousel -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- first slide -->
+              <div class="carousel-item active">
+                <img
+                  class="first-slide"
+                  src="https://image.ibb.co/nu1uuq/Untitled-1.png"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="container marketing">
-          <!-- Three columns of text below the carousel -->
-          <h2 class="pageTitle">Interactive Media Design</h2>
-          <p class="description">
-            Interactive Media Design is a two-year Ontario College Diploma
-            program that is designed to prepare students for a variety of
-            careers in the digital media industry. Students explore the
-            primary elements of media project planning and development with
-            equal importance given to the creative and the technical aspects.
-            Strong emphasis is placed on hands-on media production through
-            courses in web development, digital imaging, authoring, animation,
-            photography and video. Students plan and execute individual and
-            team-based projects and gain practical experience working with
-            live clients. The curriculum is delivered on a variety of
-            platforms including Apple OS X, Windows and a variety of mobile
-            operating systems.
-          </p>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="left">
-                <img src="https://i.ibb.co/GHMRsjF/left-01.png" />
-                <h2 class="title">Web Development</h2>
+          <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <h2 class="pageTitle">Interactive Media Design</h2>
+            <p class="description">
+              Interactive Media Design is a two-year Ontario College Diploma
+              program that is designed to prepare students for a variety of
+              careers in the digital media industry. Students explore the
+              primary elements of media project planning and development with
+              equal importance given to the creative and the technical aspects.
+              Strong emphasis is placed on hands-on media production through
+              courses in web development, digital imaging, authoring, animation,
+              photography and video. Students plan and execute individual and
+              team-based projects and gain practical experience working with
+              live clients. The curriculum is delivered on a variety of
+              platforms including Apple OS X, Windows and a variety of mobile
+              operating systems.
+            </p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="left">
+                  <img src="https://i.ibb.co/GHMRsjF/left-01.png" />
+                  <h2 class="title">Web Development</h2>
+                </div>
+                <p>
+                  <button
+                    onclick="on()"
+                    class="btn btn-secondary"
+                    href="#"
+                    role="button"
+                  >
+                    View details &raquo;
+                  </button>
+                </p>
               </div>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-              </p>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="middle">
-                <img src="https://i.ibb.co/J7DBk7g/middle-01.png" />
-                <h2 class="title">Video Foundations</h2>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="middle">
+                  <img src="https://i.ibb.co/J7DBk7g/middle-01.png" />
+                  <h2 class="title">Video Foundations</h2>
+                </div>
+                <p>
+                  <button
+                    onclick="on()"
+                    class="btn btn-secondary"
+                    href="#"
+                    role="button"
+                  >
+                    View details &raquo;
+                  </button>
+                </p>
               </div>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-              </p>
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <div class="right">
-                <img src="https://i.ibb.co/nkLZNfJ/right-01.png" />
-                <h2 class="title">UX Design</h2>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="right">
+                  <img src="https://i.ibb.co/nkLZNfJ/right-01.png" />
+                  <h2 class="title">UX Design</h2>
+                </div>
+                <p>
+                  <button
+                    onclick="on()"
+                    class="btn btn-secondary"
+                    href="#"
+                    role="button"
+                  >
+                    View details &raquo;
+                  </button>
+                </p>
               </div>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-              </p>
+              <!-- /.col-lg-4 -->
             </div>
-            <!-- /.col-lg-4 -->
           </div>
-        </div>
 
-        <!-- /.container -->
+          <div id="overlay" onclick="off()">
+            <!-- <div id="overlay"> -->
+            <div class="content">
+              <div class="inner">
+                <header>
+                  <nav
+                    class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+                  >
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarCollapse"
+                      aria-controls="navbarCollapse"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#overview"
+                            >OVERVIEW <span class="sr-only"></span
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#prof">PROFESSOR</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#expect">WHAT TO EXPECT</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </header>
+                <div class="imgholder">
+                  <div class="banner">
+                    <img
+                      src="https://i.ibb.co/RTwmY7r/federica-galli-703572-unsplash.jpg"
+                      width="80%"
+                    />
+                  </div>
+                  <div class="classname"><h2>Web Development</h2></div>
+                </div>
 
-        <!-- FOOTER -->
-        <footer class="container">
-          <p class="float-right"><a href="#">Back to top</a></p>
-          <p>
-            &copy; sMMART 2018. &middot; <a href="#">Privacy</a> &middot;
-            <a href="#">Terms</a>
-          </p>
-        </footer>
-      </main>
+                <div class="row featurette top">
+                  <div class="col-md-7">
+                    <a id="overview" class="scroll"></a>
+                    <h2 class="featurette-heading">OVERVIEW</h2>
+                    <p class="lead">
+                      Up to this point you have developed static content and
+                      focused on the client side of web development. This course
+                      we will expand on that knowledge and focus on creating
+                      dynamic websites and application with the introduction of
+                      Server-Side Web Development. Throughout the course, you
+                      will learn the PHP Scripting Language, the most widely
+                      used server-side development language, and MySQL, one of
+                      the most widely used, open source relational database
+                      management systems. Together you will be able to build
+                      dynamic websites, securely track users interactions, and
+                      even create your own APIs.
+                    </p>
+                  </div>
+                  <div class="col-md-5">
+                    <img
+                      class="featurette-image img-fluid mx-auto"
+                      src="https://i.ibb.co/DYc2zdy/teacher.png"
+                      width="50%"
+                    />
+                  </div>
+                </div>
+                <a id="prof" class="scroll"></a>
+                <div class="row featurette mid">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">PROFESSOR</h2>
+                    <p class="lead">
+                      My name is Michael Eisenbraun and I am currently a
+                      part-time professor at Algonquin College for the
+                      Interactive Media and Design program. I teach Client-Side
+                      Web Development in Level 2 and Server-Side Web Development
+                      in Level 3. <br />
+                      <br />
+                      I am largely self-taught and constantly striving to learn
+                      more. The field of web design and development is
+                      ever-changing and if you don’t keep moving, you will fall
+                      behind. It is this realization that lead me to start
+                      teaching at Algonquin College in January of 2016. I have a
+                      passion for learning and it fuels my desire to share what
+                      I know with others. It has become my new passion, and my
+                      primary focus. I aim to be the best teacher I can, and it
+                      is my hope that my students will find the same spark of
+                      curiosity that changed my life all those years ago.
+                    </p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img
+                      class="featurette-image img-fluid mx-auto"
+                      src="https://i.ibb.co/PFC32nJ/teacher-1.png"
+                    />
+                  </div>
+                </div>
+                <a id="expect" class="scroll"></a>
+                <div class="row featurette bot">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">WHAT TO EXPECT</h2>
+                    <ul class="lead">
+                      <li>Creating a Local Development Environment</li>
+                      <li>Creating Dynamic HTML with PHP</li>
+                      <li>Creating Dynamic Pages with PHP</li>
+                      <li>Form Handling with PHP</li>
+                      <li>SQL Databases</li>
+                      <li>SQL Queries</li>
+                      <li>Routing with Laravel</li>
+                      <li>M.V.C with Laravel</li>
+                      <li>RESTful API with Laravel</li>
+                      <li>Front End Implementation</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5">
+                    <img
+                      class="featurette-image img-fluid mx-auto"
+                      src="https://i.ibb.co/p47LH1D/friendship.png"
+                    />
+                  </div>
+                </div>
+
+                <hr class="featurette-divider" />
+              </div>
+            </div>
+          </div>
+
+          <!-- /.container -->
+
+          <!-- FOOTER -->
+          <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>
+              &copy; sMMART 2018. &middot; <a href="#">Privacy</a> &middot;
+              <a href="#">Terms</a>
+            </p>
+          </footer>
+        </main>
+      </div>
     </div>
-  </div>
-  <!--
+    <!--
       Bootstrap core JavaScript
       ==================================================
     -->
-  <!-- Placed at the end of the document so the pages load faster -->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script>
-    window.jQuery ||
-      document.write(
-        '<script src="../../jquery/dist/jquery-slim.min.js"><\/script>'
-      )
-  </script>
-  <script src="node_modules/popper.js/dist/esm/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../jquery/dist/jquery-slim.min.js"><\/script>'
+        )
+    </script>
+    <script src="node_modules/popper.js/dist/esm/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
