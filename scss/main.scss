@@ -3,18 +3,14 @@
 // potential variables to customize.
 // For example ...
 $primary: #006341; // set the primary color to AC Green
-<<<<<<< HEAD
 $jumbotron-bg: white; // set the Jumbotron background to AC Green @10% tint
-=======
 $jumbotron-bg: #e5efec; // set the Jumbotron background to AC Green @10% tint
->>>>>>> master
 $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 
 // Load the main bootstrap framework.
 @import '../node_modules/startbootstrap-business-casual/scss/business-casual';
 
 // Custom styles that are common for all pages in our project
-<<<<<<< HEAD
 
 // Load our custom partials with styles specific to a particular page.
 // e.g. @import 'schedule';
@@ -233,9 +229,7 @@ h2 {
     margin-top: 7rem;
   }
 }
-=======
 @import 'coursePage';
 // Load our custom partials with styles specific to a particular page.
 // e.g. @import 'schedule';
 // will import the '_schedule.scss' file with style specific to the schedule page.
->>>>>>> master
