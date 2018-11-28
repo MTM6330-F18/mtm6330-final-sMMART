@@ -6339,14 +6339,14 @@ html {
 .col-lg-4 {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  z-index: 20; }
 
 .left,
 .middle,
 .right {
   width: 100%;
   height: 100%;
-  z-index: 20;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 5px; }
