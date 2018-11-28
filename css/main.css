@@ -6479,6 +6479,3 @@ h2 {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem; } }
-
-body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e1e007)); }
