@@ -96,8 +96,8 @@
               <!-- /.col-lg-4 -->
             </div>
           </div>
-
-          <div id="overlay" onclick="off()">
+          <!-- onclick="off()" -->
+          <div id="overlay">
             <!-- <div id="overlay"> -->
             <div class="content">
               <div class="inner">
@@ -119,7 +119,9 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">HOME</a>
+                          <a class="nav-link" href="#myCarousel" onclick="off()"
+                            >HOME</a
+                          >
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#overview"
@@ -145,10 +147,9 @@
                   </div>
                   <div class="classname"><h2>Web Development</h2></div>
                 </div>
-
-                <div class="row featurette top">
+                <a id="overview" class="scroll"></a>
+                <div class="row featurette top" onclick="off()">
                   <div class="col-md-7">
-                    <a id="overview" class="scroll"></a>
                     <h2 class="featurette-heading">OVERVIEW</h2>
                     <p class="lead">
                       Up to this point you have developed static content and
@@ -173,7 +174,7 @@
                   </div>
                 </div>
                 <a id="prof" class="scroll"></a>
-                <div class="row featurette mid">
+                <div class="row featurette mid" onclick="off()">
                   <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">PROFESSOR</h2>
                     <p class="lead">
@@ -203,7 +204,7 @@
                   </div>
                 </div>
                 <a id="expect" class="scroll"></a>
-                <div class="row featurette bot">
+                <div class="row featurette bot" onclick="off()">
                   <div class="col-md-7">
                     <h2 class="featurette-heading">WHAT TO EXPECT</h2>
                     <ul class="lead">
@@ -264,28 +265,5 @@
     </script>
     <script src="node_modules/popper.js/dist/esm/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--
-      <div class="container">
-        <div class="jumbotron my-5">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
-        </div>
-      </div>
-    -->
-
-    <!--
-      <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <span class="site-heading-upper text-primary mb-3"
-          >Interactive Media Design</span
-        >
-        <span class="site-heading-lower">Video Production</span>
-      </h1>
-    -->
   </body>
 </html>
