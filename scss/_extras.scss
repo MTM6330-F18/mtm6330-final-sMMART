@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  padding: 0;
+  margin: 0 auto;
+  .jumbotron {
+    padding: 0;
+  }
+}
+
 /* Carousel base class */
 .carousel {
   margin-top: 0;
@@ -11,16 +19,16 @@ html {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  margin: 0;
-  padding: 10rem 0;
-}
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
+  background-image: url(../../img/banners/home.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding: 5rem 2rem;
+  .first-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    width: 100% !important;
+  }
 }
 
 /* MARKETING CONTENT
@@ -58,30 +66,50 @@ html {
 }
 
 .marketing {
+  width: 90% !important;
+  margin: 0 auto !important;
   h2 {
     font-weight: 400;
   }
-
-  .col-lg-4 {
-    margin-bottom: 4rem;
+  .row {
+    .col-lg-4 {
+      margin-bottom: 4rem;
+      text-align: center;
+      .left {
+        h2.title {
+          color: white;
+          margin-top: 3%;
+          font-size: 1.3rem;
+        }
+      }
+      .middle {
+        h2.title {
+          color: white;
+          margin-top: 3%;
+          font-size: 1.3rem;
+        }
+      }
+      .right {
+        h2.title {
+          color: white;
+          margin-top: 3%;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .pageTitle {
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-left: 0;
     text-align: center;
   }
-}
 
-.title {
-  color: white;
-  margin-top: 3%;
-  font-size: 1.3rem;
-}
-
-.pageTitle {
-  margin-top: 3%;
-  margin-left: 0;
-}
-
-.description {
-  font-size: 1.3rem;
-  margin-top: 2%;
+  .description {
+    font-size: 0.9rem;
+    margin-top: 2%;
+    text-align: justify;
+  }
 }
 
 // overlay
@@ -122,30 +150,37 @@ html {
 }
 
 .banner {
-  margin: -18% 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
 .classname {
-  margin-left: 10%;
   background-color: rgb(211, 211, 211);
+  margin: 0 auto;
   width: 80%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 0.5rem 0;
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 0;
+  }
 }
 
 .featurette {
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.featurette p,
-h2 {
-  margin-left: 5%;
-}
-
-.featurette h2 {
-  margin-top: 4%;
+  p {
+    margin-left: 5px;
+    font-size: 0.9rem;
+  }
+  h2 {
+    margin-left: 5px;
+    margin-top: 4%;
+  }
 }
 
 .mid p {
@@ -156,7 +191,8 @@ h2 {
 .featurette-heading {
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.05rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 .col-md-5 {
@@ -183,7 +219,7 @@ h2 {
 }
 
 .mid {
-  background-color: #14351b;
+  background-color: #558f98;
   color: white;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -217,6 +253,33 @@ h2 {
     margin: 0;
     max-width: 100% !important;
   }
+
+  .carousel-item {
+    padding: 9rem 22rem;
+  }
+  .marketing {
+    .pageTitle {
+      font-size: 4rem;
+    }
+    .description {
+      font-size: 1.3rem;
+    }
+  }
+
+  .classname {
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+  .featurette {
+    p {
+      margin-left: 50px;
+      font-size: 1rem;
+    }
+    h2 {
+      margin-left: 50px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -236,16 +299,11 @@ h2 {
 .my-5 {
   margin-top: 0 !important;
 }
-@media (min-width: 576px) {
+@media all and (min-width: 576px) {
   .jumbotron {
     padding: 0;
     margin: 0;
   }
-}
-
-.marketing {
-  width: 80% !important;
-  margin: 0 auto !important;
 }
 
 img,
@@ -256,4 +314,13 @@ svg {
 footer {
   width: 90% !important;
   margin: 0 auto !important;
+  background-color: #e5efec;
+  .float-right {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+  }
+  p {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+  }
 }

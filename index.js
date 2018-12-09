@@ -7,6 +7,7 @@ function off() {
 }
 
 const $overlay = document.getElementById('overlay')
+const $banner = document.getElementById('banner-img')
 const $client = document.getElementById('client-side')
 const $video = document.getElementById('video')
 const $uxd = document.getElementById('uxd')
@@ -21,6 +22,7 @@ $client.addEventListener('click', () => {
   $overview.innerHTML = web.overview
   $professor.innerHTML = web.professor
   $overlay.style.backgroundColor = '#033f67'
+  $banner.setAttribute('src', './img/banners/web.jpg')
 })
 
 $video.addEventListener('click', () => {
@@ -30,6 +32,7 @@ $video.addEventListener('click', () => {
   $overview.innerHTML = video.overview
   $professor.innerHTML = video.professor
   $overlay.style.backgroundColor = '#d8881f'
+  $banner.setAttribute('src', './img/banners/video.jpg')
 })
 
 $uxd.addEventListener('click', () => {
@@ -39,6 +42,7 @@ $uxd.addEventListener('click', () => {
   $overview.innerHTML = ux.overview
   $professor.innerHTML = ux.professor
   $overlay.style.backgroundColor = '#284322'
+  $banner.setAttribute('src', './img/banners/ux.jpg')
 })
 
 const pool = {

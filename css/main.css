@@ -6315,6 +6315,12 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   scroll-behavior: smooth; }
 
+.container {
+  padding: 0;
+  margin: 0 auto; }
+  .container .jumbotron {
+    padding: 0; }
+
 /* Carousel base class */
 .carousel {
   margin-top: 0;
@@ -6323,15 +6329,15 @@ html {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  margin: 0;
-  padding: 10rem 0; }
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto; }
+  background-image: url(../../img/banners/home.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding: 5rem 2rem; }
+  .carousel-item .first-slide {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    width: 100% !important; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -6360,25 +6366,35 @@ html {
 .right {
   background-color: #284322; }
 
-.marketing h2 {
-  font-weight: 400; }
-
-.marketing .col-lg-4 {
-  margin-bottom: 4rem;
-  text-align: center; }
-
-.title {
-  color: white;
-  margin-top: 3%;
-  font-size: 1.3rem; }
-
-.pageTitle {
-  margin-top: 3%;
-  margin-left: 0; }
-
-.description {
-  font-size: 1.3rem;
-  margin-top: 2%; }
+.marketing {
+  width: 90% !important;
+  margin: 0 auto !important; }
+  .marketing h2 {
+    font-weight: 400; }
+  .marketing .row .col-lg-4 {
+    margin-bottom: 4rem;
+    text-align: center; }
+    .marketing .row .col-lg-4 .left h2.title {
+      color: white;
+      margin-top: 3%;
+      font-size: 1.3rem; }
+    .marketing .row .col-lg-4 .middle h2.title {
+      color: white;
+      margin-top: 3%;
+      font-size: 1.3rem; }
+    .marketing .row .col-lg-4 .right h2.title {
+      color: white;
+      margin-top: 3%;
+      font-size: 1.3rem; }
+  .marketing .pageTitle {
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-left: 0;
+    text-align: center; }
+  .marketing .description {
+    font-size: 0.9rem;
+    margin-top: 2%;
+    text-align: justify; }
 
 #overlay {
   position: fixed;
@@ -6413,26 +6429,31 @@ html {
   text-align: center; }
 
 .banner {
-  margin: -18% 0;
-  margin-bottom: 0; }
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden; }
+  .banner img {
+    width: 100%; }
 
 .classname {
-  margin-left: 10%;
   background-color: lightgray;
+  margin: 0 auto;
   width: 80%;
-  padding-top: 1%;
-  padding-bottom: 1%; }
+  padding: 0.5rem 0; }
+  .classname h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 0; }
 
 .featurette {
   margin-left: 10%;
   margin-right: 10%; }
-
-.featurette p,
-h2 {
-  margin-left: 5%; }
-
-.featurette h2 {
-  margin-top: 4%; }
+  .featurette p {
+    margin-left: 5px;
+    font-size: 0.9rem; }
+  .featurette h2 {
+    margin-left: 5px;
+    margin-top: 4%; }
 
 .mid p {
   margin-right: 5%; }
@@ -6441,7 +6462,8 @@ h2 {
 .featurette-heading {
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.05rem; }
+  letter-spacing: 1px;
+  font-size: 1.2rem; }
 
 .col-md-5 {
   transform: translateX(40%);
@@ -6462,7 +6484,7 @@ h2 {
   padding-top: 2%; }
 
 .mid {
-  background-color: #033f67;
+  background-color: #558f98;
   color: white;
   padding-top: 1%;
   padding-bottom: 2%; }
@@ -6487,7 +6509,20 @@ h2 {
     padding-right: 0 !important;
     padding-left: 0 !important;
     margin: 0;
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+  .carousel-item {
+    padding: 9rem 22rem; }
+  .marketing .pageTitle {
+    font-size: 4rem; }
+  .marketing .description {
+    font-size: 1.3rem; }
+  .classname h2 {
+    font-size: 2.2rem; }
+  .featurette p {
+    margin-left: 50px;
+    font-size: 1rem; }
+  .featurette h2 {
+    margin-left: 50px; } }
 
 @media (min-width: 768px) {
   .container {
@@ -6504,14 +6539,10 @@ h2 {
 .my-5 {
   margin-top: 0 !important; }
 
-@media (min-width: 576px) {
+@media all and (min-width: 576px) {
   .jumbotron {
     padding: 0;
     margin: 0; } }
-
-.marketing {
-  width: 80% !important;
-  margin: 0 auto !important; }
 
 img,
 svg {
@@ -6519,4 +6550,11 @@ svg {
 
 footer {
   width: 90% !important;
-  margin: 0 auto !important; }
+  margin: 0 auto !important;
+  background-color: #e5efec; }
+  footer .float-right {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px; }
+  footer p {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px; }
