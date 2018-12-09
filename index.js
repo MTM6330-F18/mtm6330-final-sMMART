@@ -1,8 +1,8 @@
-function on() {
+function on () {
   document.getElementById('overlay').style.display = 'block'
 }
 
-function off() {
+function off () {
   document.getElementById('overlay').style.display = 'none'
 }
 
@@ -14,6 +14,7 @@ const $uxd = document.getElementById('uxd')
 const $heading = document.getElementById('heading')
 const $overview = document.getElementById('overviewText')
 const $professor = document.getElementById('professor')
+const $expect = document.getElementById('expectText')
 
 $client.addEventListener('click', () => {
   pool.selected = $client.dataset.course
@@ -21,6 +22,7 @@ $client.addEventListener('click', () => {
   $heading.innerText = pool.selected
   $overview.innerHTML = web.overview
   $professor.innerHTML = web.professor
+  $expect.innerHTML = web.expect
   $overlay.style.backgroundColor = '#033f67'
   $banner.setAttribute('src', './img/banners/web.jpg')
 })
@@ -31,6 +33,7 @@ $video.addEventListener('click', () => {
   $heading.innerText = pool.selected
   $overview.innerHTML = video.overview
   $professor.innerHTML = video.professor
+  $expect.innerHTML = video.expect
   $overlay.style.backgroundColor = '#d8881f'
   $banner.setAttribute('src', './img/banners/video.jpg')
 })
@@ -41,6 +44,7 @@ $uxd.addEventListener('click', () => {
   $heading.innerText = pool.selected
   $overview.innerHTML = ux.overview
   $professor.innerHTML = ux.professor
+  $expect.innerHTML = ux.expect
   $overlay.style.backgroundColor = '#284322'
   $banner.setAttribute('src', './img/banners/ux.jpg')
 })
